@@ -6,7 +6,7 @@ from django.core.handlers.wsgi import WSGIRequest
 from django.contrib.auth.models import AnonymousUser
 
 
-def mock_request(base=settings.SITE_URL, path='/', user=None):
+def request_mock(base=settings.SITE_URL, path='/', user=None):
     """
     Create a request object that mocks a real one
     Useful in case a real request object is not available, but is needed (delayed Celery tasks for instance)

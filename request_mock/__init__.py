@@ -13,7 +13,7 @@ def request_mock(base=settings.SITE_URL, path='/', user=None):
     """
     url_parse = urlparse(base)
 
-    request = WSGIRequest({u
+    request = WSGIRequest({
         'REQUEST_METHOD': 'GET',
         'REQUEST_URI': path,
 

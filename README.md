@@ -9,8 +9,6 @@ The request object is generated using your settings, and by default contains all
 
 ## Configuration
 
-* Add `request_mock` to your INSTALLED_APPS.
-
 * Ensure `SITE_URL` is defined in your **settings.py**, with a value such as 'https://example.com/'
 
 * When you need to generate a request mock object, simply use the following code:

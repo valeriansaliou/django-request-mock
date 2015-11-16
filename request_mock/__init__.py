@@ -1,5 +1,12 @@
-from urlparse import urlparse
-from StringIO import StringIO
+import sys
+
+if sys.version_info >= (3, ):
+    from urllib.parse import urlparse
+    from io import StringIO
+else:
+    from urlparse import urlparse
+    from StringIO import StringIO
+
 
 from django.conf import settings
 from django.core.handlers.wsgi import WSGIRequest
